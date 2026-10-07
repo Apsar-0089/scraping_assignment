@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Multi-Source Web Scraping & Data Consolidation</title>
+
+  <meta
+    name="description"
+    content="Python ETL pipeline for scraping, cleaning, validating, deduplicating and consolidating data."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+
+    <nav class="nav">
+      <div class="brand">
+        Scraping Assignment
+      </div>
+
+      <a
+        class="nav-link"
+        href="https://github.com/Apsar-0089/scraping_assignment"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub ↗
+      </a>
+    </nav>
+
+    <div class="hero-content">
+
+      <span class="eyebrow">
+        PYTHON • ETL • WEB SCRAPING
+      </span>
+
+      <h1>
+        Multi-Source Web Scraping &amp; Data Consolidation
+      </h1>
+
+      <p>
+        A robust Python ETL pipeline that collects data from two public
+        practice websites, cleans and validates the records, removes
+        duplicates, and produces a consolidated dataset with a JSON
+        summary and execution log.
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="button primary"
+          href="https://github.com/Apsar-0089/scraping_assignment"
+          target="_blank"
+          rel="noopener"
+        >
+          View GitHub Repository
+        </a>
+
+        <a
+          class="button secondary"
+          href="#pipeline"
+        >
+          Explore Project
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- STATISTICS -->
+  <section class="stats">
+
+    <div class="stat">
+      <strong>2</strong>
+      <span>Data Sources</span>
+    </div>
+
+    <div class="stat">
+      <strong>1,100+</strong>
+      <span>Expected Records</span>
+    </div>
+
+    <div class="stat">
+      <strong>10</strong>
+      <span>Common Columns</span>
+    </div>
+
+    <div class="stat">
+      <strong>22</strong>
+      <span>Automated Tests</span>
+    </div>
+
+  </section>
+
+
+  <main>
+
+    <!-- PIPELINE SECTION -->
+    <section id="pipeline" class="section">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          PIPELINE
+        </span>
+
+        <h2>
+          From raw pages to usable data
+        </h2>
+
+        <p>
+          The project separates network scraping from data transformation
+          so each stage can be tested and maintained independently.
+        </p>
+
+      </div>
+
+
+      <div class="pipeline">
+
+        <div class="step">
+
+          <span>01</span>
+
+          <h3>
+            Scrape
+          </h3>
+
+          <p>
+            Collect records from Books to Scrape and Quotes to Scrape
+            with pagination and retry handling.
+          </p>
+
+        </div>
+
+
+        <div class="arrow">
+          →
+        </div>
+
+
+        <div class="step">
+
+          <span>02</span>
+
+          <h3>
+            Clean
+          </h3>
+
+          <p>
+            Normalize text, prices, ratings, tags and URLs into a
+            consistent data model.
+          </p>
+
+        </div>
+
+
+        <div class="arrow">
+          →
+        </div>
+
+
+        <div class="step">
+
+          <span>03</span>
+
+          <h3>
+            Validate
+          </h3>
+
+          <p>
+            Check required fields, URLs, prices, ratings and quote
+            authors before accepting records.
+          </p>
+
+        </div>
+
+
+        <div class="arrow">
+          →
+        </div>
+
+
+        <div class="step">
+
+          <span>04</span>
+
+          <h3>
+            Deduplicate
+          </h3>
+
+          <p>
+            Use normalized fingerprints and SHA-256 to identify
+            repeated records.
+          </p>
+
+        </div>
+
+
+        <div class="arrow">
+          →
+        </div>
+
+
+        <div class="step">
+
+          <span>05</span>
+
+          <h3>
+            Consolidate
+          </h3>
+
+          <p>
+            Write the final CSV, JSON summary and timestamped
+            scraper log.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOURCES + TECHNOLOGIES -->
+    <section class="section two-column">
+
+      <div class="card">
+
+        <span class="eyebrow">
+          SOURCES
+        </span>
+
+        <h2>
+          Data collected
+        </h2>
+
+        <ul>
+
+          <li>
+            <strong>Books to Scrape</strong>
+            — titles, prices, ratings, URLs and optional category
+            and description details.
+          </li>
+
+          <li>
+            <strong>Quotes to Scrape</strong>
+            — quote text, authors, tags and source listing URLs.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="card">
+
+        <span class="eyebrow">
+          TECH STACK
+        </span>
+
+        <h2>
+          Built with
+        </h2>
+
+        <div class="chips">
+
+          <span>Python</span>
+          <span>Requests</span>
+          <span>BeautifulSoup</span>
+          <span>lxml</span>
+          <span>Pytest</span>
+          <span>CSV</span>
+          <span>JSON</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- OUTPUT SECTION -->
+    <section class="section">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          OUTPUT
+        </span>
+
+        <h2>
+          Clear, reproducible deliverables
+        </h2>
+
+      </div>
+
+
+      <div class="output-grid">
+
+        <div class="output-card">
+
+          <div class="icon">
+            CSV
+          </div>
+
+          <h3>
+            final_dataset.csv
+          </h3>
+
+          <p>
+            One consolidated dataset containing valid, unique records
+            in a fixed 10-column schema.
+          </p>
+
+        </div>
+
+
+        <div class="output-card">
+
+          <div class="icon">
+            JSON
+          </div>
+
+          <h3>
+            summary_report.json
+          </h3>
+
+          <p>
+            Run statistics, source counts, validation results,
+            duplicate counts and reconciliation status.
+          </p>
+
+        </div>
+
+
+        <div class="output-card">
+
+          <div class="icon">
+            LOG
+          </div>
+
+          <h3>
+            scraper.log
+          </h3>
+
+          <p>
+            Timestamped information, warning and error messages
+            for traceable execution.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- RUN LOCALLY -->
+    <section class="section run-section">
+
+      <div class="run-card">
+
+        <span class="eyebrow">
+          RUN LOCALLY
+        </span>
+
+        <h2>
+          One command starts the pipeline
+        </h2>
+
+        <pre><code>python main.py</code></pre>
+
+        <p>
+          For a quick smoke test:
+        </p>
+
+        <pre><code>python main.py --max-pages 2</code></pre>
+
+        <a
+          class="button primary"
+          href="https://github.com/Apsar-0089/scraping_assignment"
+          target="_blank"
+          rel="noopener"
+        >
+          See full instructions
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      Built as part of a web scraping and data consolidation assignment.
+    </p>
+
+    <a
+      href="https://github.com/Apsar-0089/scraping_assignment"
+      target="_blank"
+      rel="noopener"
+    >
+      Apsar-0089/scraping_assignment ↗
+    </a>
+
+  </footer>
+
+</body>
+</html>
