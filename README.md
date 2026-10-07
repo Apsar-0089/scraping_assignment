@@ -10,6 +10,10 @@ Quotes to Scrape ─┘
 
 One command runs the whole job: `python main.py`.
 
+
+## 🌐 Live Demo
+
+[View Live Project](https://scrapingassignment-website.vercel.app)
 ---
 
 ## Contents
