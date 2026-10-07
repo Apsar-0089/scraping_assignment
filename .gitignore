@@ -1,0 +1,17 @@
+# virtual environments
+venv/
+.venv/
+env/
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# NOTE: output/ and logs/ are intentionally tracked — the assignment asks
+# for the final dataset, summary report and a sample log in the submission.
